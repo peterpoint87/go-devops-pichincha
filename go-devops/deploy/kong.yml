@@ -1,0 +1,16 @@
+_format_version: "3.0"
+services:
+  - name: devops
+    url: http://devops-service-1:8080
+    routes:
+      - name: devops-route
+        paths:
+          - /DevOps
+        methods: [POST]
+  - name: devops-2
+    url: http://devops-service-2:8080
+    routes:
+      - name: devops-route-2
+        paths:
+          - /DevOps
+        methods: [POST]
